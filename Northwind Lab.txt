@@ -1,0 +1,30 @@
+1. select * from Customers
+
+2. select distinct Country from Customers
+
+3. select * from Customers WHERE customerID LIKE '%BL%';
+
+4. SELECT TOP (100) * FROM Orders; 
+		Why? To get a random sample of data?
+		What else? You might want to include the Column or property you'd want to return as well.
+
+5. SELECT * FROM Customers WHERE PostalCode = '1010' or PostalCode = '3012' or PostalCode = '12209' or PostalCode = '05023'
+
+6. SELECT * FROM Orders WHERE ShipRegion IS not null;
+
+7. SELECT * FROM Customers ORDER BY Country, City;
+
+8. INSERT INTO Customers
+	VALUES('LONER','Permenant Debt','Adolf Twitler','Agent Orange','Fifth Avenue','Ney York City','NY','10022','USA','(212)715-7290',NULL); 
+
+9. update Orders SET ShipRegion = 'EuroZone' Where ShipCountry = 'France'
+
+10. Delete from [Order Details] WHERE Quantity = '1';
+
+11. SELECT * FROM Orders WHERE OrderID = '10290';
+
+12. SELECT Orders.CustomerID, Customers.CustomerID FROM Orders JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+13. SELECT * FROM Employees WHERE ReportsTo Is Null;
+
+14. SELECT DISTINCT FirstName FROM Employees WHERE ReportsTo = 2;
